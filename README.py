@@ -41,13 +41,13 @@
 #     sudo apt clean
 #     ``` 
 #     
-#     2.2 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando:
+#     2.2 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que **NÃO** podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando:
 #     
 #     ```bash
 #     sudo apt autoclean
 #     ```
 # 
-#     2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando:
+#     2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que **NÃO** são mais necessários. Digite o seguinte comando:
 #     
 #     ```bash
 #     sudo apt autoremove -y
@@ -111,7 +111,7 @@
 #     code
 #     ```
 # 
-# Isso deve permitir que você instale um arquivo `.deb` no seu sistema Ubuntu. Lembre-se de que os arquivos .deb são pacotes de software específicos para distribuições baseadas no Debian, como o Ubuntu, e geralmente são seguros de usar, especialmente se você os obtiver de fontes confiáveis. No entanto, sempre esteja ciente da origem dos arquivos .deb que você baixa e evite fontes não confiáveis para garantir a segurança do seu sistema.
+# Isso deve permitir que você instale um arquivo `.deb` no seu sistema Ubuntu. Lembre-se de que os arquivos .deb são pacotes de software específicos para distribuições baseadas no Debian, como o Ubuntu, e geralmente são seguros de usar, especialmente se você os obtiver de fontes confiáveis. No entanto, sempre esteja ciente da origem dos arquivos .deb que você baixa e evite fontes **NÃO** confiáveis para garantir a segurança do seu sistema.
 # 
 
 # ## 1.1 Código completo para configurar/instalar/usar o `VS Code` no `Linux Ubuntu` 
@@ -140,7 +140,7 @@
 # 
 # 2. **Crie ou edite o arquivo `launch.json`**:
 # 
-#     2.1 O arquivo `launch.json` é usado para configurar o comportamento da depuração no `VS Code`. Se você não tiver um arquivo `launch.json`, você pode criar um.
+#     2.1 O arquivo `launch.json` é usado para configurar o comportamento da depuração no `VS Code`. Se você **NÃO** tiver um arquivo `launch.json`, você pode criar um.
 # 
 #     2.2 Para criar ou abrir o `launch.json`, vá para a aba `Run and Debug` (`Ctrl+Shift+D`) e clique no _link_ `create a launch.json file` ou `add configuration`.
 # 
@@ -196,7 +196,7 @@
 # if debug_mode:
 #     print("Modo de depuração ativado.")
 # else:
-#     print("Modo de depuração não ativado.")
+#     print("Modo de depuração **NÃO** ativado.")
 # ```
 # 
 # **Dicas adicionais**
@@ -224,7 +224,7 @@
 # 
 # * **Preferences: `Open Default Settings (JSON)`**:
 # 
-#     * **Uso**: Este arquivo contém as configurações padrão do `VS Code`, mas não é recomendável fazer alterações diretamente neste arquivo. Ele serve mais como referência para ver as configurações padrão.
+#     * **Uso**: Este arquivo contém as configurações padrão do `VS Code`, mas **NÃO** é recomendável fazer alterações diretamente neste arquivo. Ele serve mais como referência para ver as configurações padrão.
 # 
 #     * **Quando usar**: Não faça modificações aqui.
 # 
@@ -232,7 +232,7 @@
 # 
 #     * **Uso**: Este arquivo armazena configurações específicas para o _workspace_ ou pasta de projeto atual. As configurações que você fizer aqui só serão aplicadas ao projeto aberto no momento.
 # 
-#     * **Quando usar**: Use esta opção se você quer que as configurações de `PEP 8` sejam aplicadas apenas ao projeto atual e não a todos os projetos.
+#     * **Quando usar**: Use esta opção se você quer que as configurações de `PEP 8` sejam aplicadas apenas ao projeto atual e **NÃO** a todos os projetos.
 # 
 # **Qual opção escolher?**
 # 
@@ -291,7 +291,7 @@
 # 
 # **Conclusão**
 # 
-# Com essas configurações, o `VS Code` considerará o `PEP 8` ao editar códigos `Python`, ajudando a manter um estilo de código consistente e legível. Essas ferramentas não apenas ajudam a detectar problemas de estilo, mas também promovem boas práticas de codificação.
+# Com essas configurações, o `VS Code` considerará o `PEP 8` ao editar códigos `Python`, ajudando a manter um estilo de código consistente e legível. Essas ferramentas **NÃO** apenas ajudam a detectar problemas de estilo, mas também promovem boas práticas de codificação.
 
 # ### 3.3 Como configurar o limite visual de caracteres no `VS Code`
 # 
@@ -305,13 +305,15 @@
 #     }
 #     ```
 # 
-#     Se quiser usar `79` em vez de `100`, basta trocar `"editor.rulers": [100]` por `"editor.rulers": [79]`. Se quiser os dois, use:
+#     Se quiser usar `79` em vez de `100`, basta trocar `"editor.rulers": [100]` por `"editor.rulers":
+#      [79]`. Se quiser os dois, use:
 # 
 #     ```json
 #     "editor.rulers": [79, 100]
 #     ```
 # 
-# O `VS Code` mostrará uma linha vertical cinza (ou da cor do seu tema) na coluna especificada. Isso não bloqueia a digitação além do limite, mas ajuda visualmente a manter o padrão.
+# O `VS Code` mostrará uma linha vertical cinza (ou da cor do seu tema) na coluna especificada. Isso 
+# **NÃO** bloqueia a digitação além do limite, mas ajuda visualmente a manter o padrão.
 # 
 
 # ## 4. Extensões
@@ -416,6 +418,74 @@
 #     Isso mostrará todas as extensões junto com suas versões atuais.
 # 
 
+# ### 4.3 Desinstalar uma extensão
+# 
+# Para desinstalar uma extensão no `VS Code`, siga os passos abaixo:
+# 
+# 1. **Abrir o VS Code**:
+# 
+#    1.1 Inicie o `VS Code` no seu computador.
+# 
+# 2. **Acessar a Visualização de Extensões**  
+#    
+#    2.1 Clique no ícone de **Extensões** na barra lateral esquerda ou pressione `Ctrl+Shift+X`.
+# 
+# 3. **Localizar a Extensão**  
+#    
+#    3.1 No campo de pesquisa, digite o nome da extensão que deseja remover (por exemplo, `Python`, `C++`, `GitLab` etc.).
+# 
+# 4. **Selecionar e Desinstalar**  
+#    
+#    4.1 Clique na extensão para abrir sua página de detalhes.  
+#    
+#    4.2 Clique no botão **Desinstalar**.
+# 
+# 5. **Reiniciar o VS Code (se necessário)**  
+#    
+#    5.1 Em alguns casos, é preciso recarregar a janela do editor para encerrar o servidor de linguagem (LSP) da extensão.  
+#    
+#    5.2 Abra a Paleta de Comandos (`Ctrl+Shift+P`), digite **“Reload Window”** e pressione `Enter`.
+# 
+# 6. **Limpe caches (opcional)**  
+#    
+#    Algumas LSPs armazenam arquivos em cache em:  
+#    
+#    ```bash
+#    ~/.vscode/extensions/
+#    ```
+#    
+
+# #### 4.3.1 Verificar se existe versões antigas do `jupyter` instaladas em paralelo
+# 
+# Você ainda tem várias versões antigas do extension host do Jupyter instaladas em paralelo e **NÃO** removidas, por isso aparecem tantos diretórios `ms-toolsai.jupyter-*`. O `VS Code` **NÃO** apaga automaticamente versões antigas quando você atualiza uma extensão, ele cria um novo diretório a cada versão.
+# 
+# Para liberar espaço e parar de carregar instâncias órfãs, você pode:
+# 
+# 1. **Manter apenas a última versão**: Digamos que a versão mais recente seja, por exemplo, `ms-toolsai.jupyter-2025.4.1-linux-x64`. Você pode remover todas as outras com algo como:
+# 
+#     ```bash
+#     cd ~/.vscode/extensions
+#     ls -d ms-toolsai.jupyter-* | grep -v 2025.4.1 | xargs rm -rf
+#     ```
+# 
+# 2. **Fazer o mesmo para outras extensões **NÃO** usadas
+# 
+#     * `github.copilot-chat` se **NÃO** usa o chat do Copilot
+# 
+#     * `mechatroner.rainbow-csv` se **NÃO** trabalha com CSV colorido
+# 
+#     * `ms-vscode-remote.remote-wsl` se **NÃO** desenvolve no WSL
+# 
+#     * `ms-vsliveshare.vsliveshare` se **NÃO** usa Live Share
+# 
+#     * `redhat.vscode-xml` se **NÃO** edita XML
+# 
+# 3. **Recarregar o `VS Code`**
+# 
+#     Após remover os diretórios antigos, abra o Command Palette (`Ctrl+Shift+P`) e execute `Reload Window` para reiniciar o Extension Host e efetivamente encerrar os servidores LSP órfãos.
+# 
+# Dessa forma você mantém apenas o que realmente usa e reduz significativamente o consumo de memória.
+
 # ### 5. Habilitar o `PyLance`
 # 
 # Para habilitar o `PyLance` no `VS Code`, siga os passos abaixo:
@@ -438,7 +508,7 @@
 # 
 #     2.3 Na barra de pesquisa de configurações, digite `python.languageServer`.
 # 
-#     2.4 No campo de configuração que aparecer, altere o valor para `Pylance` (se não estiver configurado automaticamente).
+#     2.4 No campo de configuração que aparecer, altere o valor para `Pylance` (se **NÃO** estiver configurado automaticamente).
 # 
 # 3. **Reinicie o `VS Code`**:
 # 
