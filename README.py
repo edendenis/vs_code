@@ -461,6 +461,8 @@
 # 
 # Para liberar espaço e parar de carregar instâncias órfãs, você pode:
 # 
+# **ATENÇÃO**: Possivelmente, se você apagar alguma versão do `jupyter` antiga, porém, compatível com versões de `Python` mais antigos, pode ser que as teclas de atalho se alterem. Poirtanto, sugiro usar esse passo a passo como um tutorial real para excluir outras extensões que não esteja utilizando e que estejam em duplicidade.
+# 
 # 1. **Manter apenas a última versão**: Digamos que a versão mais recente seja, por exemplo, `ms-toolsai.jupyter-2025.4.1-linux-x64`. Você pode remover todas as outras com algo como:
 # 
 #     ```bash
