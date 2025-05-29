@@ -295,7 +295,13 @@
 
 # ### 3.3 Como configurar o limite visual de caracteres no `VS Code`
 # 
-# 1. **Editar o `settings.json`**: Você pode adicionar a seguinte configuração:
+# 1. **Abra a Paleta de Comandos (`Ctrl+Shift+P`), digite **“Reload Window”** e pressione `Enter`.
+# 
+# 2. Digite: `settings.json`
+# 
+# 3. Clique com o botão esquerdo do mouse em `Preferences: Open User Settings (JSON)`
+# 
+# 4. **Editar o `settings.json`**: Você pode adicionar a seguinte configuração:
 # 
 #     ```json
 #     {
@@ -322,18 +328,12 @@
 # 
 # | Extensão                                      | Descrição |
 # |-----------------------------------------------|-----------|
-# | `ambar.live-code`                             | Extensão para executar e depurar código ao vivo no VS Code. |
-# | `docker.docker`                               | Suporte para o Docker no VS Code, facilitando a criação, execução e gerenciamento de contêineres. |
 # | `github.copilot`                              | Assistente de IA da GitHub que sugere trechos de código para aumentar a produtividade. |
 # | `github.copilot-chat`                         | Extensão do GitHub Copilot que permite a interação por chat para sugestões de código. |
 # | `gitlab.gitlab-workflow`                      | Ferramentas para integração com GitLab e fluxo de trabalho direto no VS Code. |
 # | `james-yu.latex-workshop`                     | Extensão para facilitar a edição de documentos LaTeX no VS Code, com visualização de PDF. |
-# | `mathematic.vscode-pdf`                       | Visualizador de PDF integrado no VS Code, ideal para visualizar documentos matemáticos. |
-# | `mathworks.language-matlab`                   | Suporte para o desenvolvimento em MATLAB, incluindo destaque de sintaxe e execução de código. |
 # | `mechatroner.rainbow-csv`                     | Ferramenta para visualizar e editar arquivos CSV com formatação colorida no VS Code. |
-# | `ms-azuretools.vscode-docker`                 | Extensão que facilita o gerenciamento de contêineres Docker diretamente no VS Code. |
 # | `ms-ceintl.vscode-language-pack-pt-br`        | Pacote de idioma para o VS Code em português do Brasil. |
-# | `ms-dotnettools.vscode-dotnet-runtime`        | Suporte ao .NET Runtime no VS Code para desenvolvimento com C# e outros frameworks .NET. |
 # | `ms-python.debugpy`                           | Ferramenta para depuração de código Python no VS Code. |
 # | `ms-python.isort`                             | Extensão para organizar automaticamente importações em código Python. |
 # | `ms-python.python`                            | Extensão oficial do Python para o VS Code, oferecendo recursos como execução, depuração e linting. |
@@ -344,28 +344,14 @@
 # | `ms-toolsai.jupyter-renderers`                | Extensão para renderizar saídas de células em Jupyter Notebooks no VS Code. |
 # | `ms-toolsai.vscode-jupyter-cell-tags`         | Permite adicionar tags às células de Jupyter Notebooks no VS Code para melhorar a organização. |
 # | `ms-toolsai.vscode-jupyter-slideshow`         | Ferramenta para criar apresentações interativas com Jupyter Notebooks no VS Code. |
-# | `ms-vscode-remote.remote-containers`          | Suporte para desenvolvimento remoto em contêineres Docker no VS Code. |
-# | `ms-vscode-remote.remote-wsl`                 | Suporte ao Windows Subsystem for Linux (WSL) para desenvolvimento em ambientes Linux no Windows. |
 # | `ms-vscode.cmake-tools`                       | Ferramenta para suporte ao CMake, permitindo configurar e compilar projetos no VS Code. |
-# | `ms-vscode.cpptools`                          | Extensão que oferece suporte completo ao desenvolvimento em C++, incluindo depuração e IntelliSense. |
-# | `ms-vscode.cpptools-extension-pack`          | Pacote de extensões para melhorar a experiência de desenvolvimento em C++ no VS Code. |
-# | `ms-vscode.cpptools-themes`                   | Temas personalizados para a interface de desenvolvimento em C++ no VS Code. |
 # | `ms-vscode.makefile-tools`                    | Ferramenta para suportar projetos que utilizam Makefiles, permitindo compilação e execução de tarefas. |
-# | `ms-vscode.powershell`                        | Extensão para trabalhar com o PowerShell diretamente no VS Code, com destaque de sintaxe e depuração. |
 # | `ms-vsliveshare.vsliveshare`                  | Permite a colaboração em tempo real com outros desenvolvedores dentro do VS Code, compartilhando o ambiente de trabalho. |
-# | `oracle.sql-developer`                       | Extensão para desenvolvimento de SQL e interação com bancos de dados Oracle no VS Code. |
-# | `paulosilva.vsc-octave-debugger`              | Ferramenta para depuração de código em Octave diretamente no VS Code. |
-# | `redhat.java`                                 | Suporte para desenvolvimento em Java no VS Code, incluindo ferramentas de construção e depuração. |
 # | `redhat.vscode-xml`                           | Extensão para trabalhar com arquivos XML no VS Code, oferecendo validação e formatação. |
-# | `toasty-technologies.octave`                  | Suporte para desenvolvimento em Octave no VS Code, com destaque de sintaxe e depuração. |
 # | `twxs.cmake`                                  | Extensão para facilitar o uso de CMake no VS Code, permitindo criar e configurar projetos C++ facilmente. |
 # | `visualstudioexptteam.intellicode-api-usage-examples` | Exemplos de uso da API IntelliCode, proporcionando sugestões de código baseadas em inteligência artificial. |
 # | `visualstudioexptteam.vscodeintellicode`      | Extensão que oferece sugestões inteligentes de código, melhorando a produtividade com IA. |
 # | `vscjava.vscode-gradle`                       | Suporte completo para projetos Gradle em Java no VS Code, com construção e depuração. |
-# | `vscjava.vscode-java-debug`                   | Extensão para depuração de código Java no VS Code, integrando com o processo de desenvolvimento. |
-# | `vscjava.vscode-java-dependency`              | Ferramenta para gerenciar dependências em projetos Java no VS Code. |
-# | `vscjava.vscode-java-pack`                    | Pacote de ferramentas essenciais para desenvolvimento Java no VS Code, incluindo depuração e execução. |
-# | `vscjava.vscode-java-test`                    | Extensão que facilita a execução e a depuração de testes em projetos Java no VS Code. |
 # | `vscjava.vscode-maven`                        | Suporte ao Apache Maven para gerenciamento de dependências e construção de projetos Java no VS Code. |
 # 
 
@@ -472,7 +458,7 @@
 # 
 # 2. **Fazer o mesmo para outras extensões **NÃO** usadas
 # 
-#     * `github.copilot-chat` se **NÃO** usa o chat do Copilot
+#     * `github.copilot-chat` se **NÃO** usa o _chat_ do `Copilot`
 # 
 #     * `mechatroner.rainbow-csv` se **NÃO** trabalha com CSV colorido
 # 
