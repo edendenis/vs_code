@@ -293,9 +293,24 @@
 # 
 # Com essas configurações, o `VS Code` considerará o `PEP 8` ao editar códigos `Python`, ajudando a manter um estilo de código consistente e legível. Essas ferramentas **NÃO** apenas ajudam a detectar problemas de estilo, mas também promovem boas práticas de codificação.
 
-# ### 3.3 Como configurar o limite visual de caracteres no `VS Code`
+# ### 3.3 Comprimento Máximo da Linha
 # 
-# 1. **Abra a Paleta de Comandos (`Ctrl+Shift+P`), digite **“Reload Window”** e pressione `Enter`.
+# #### 3.3.1 Descrição
+# 
+# Limite todas as linhas a no máximo **79 caracteres**.
+# 
+# Para blocos longos de texto com menos restrições estruturais (como *docstrings* ou comentários), o comprimento da linha deve ser limitado a **72 caracteres**.
+# 
+# Limitar a largura da janela do editor torna possível visualizar vários arquivos lado a lado, e funciona bem ao usar ferramentas de revisão de código que exibem as duas versões em colunas adjacentes.
+# 
+# A quebra de linha padrão na maioria das ferramentas prejudica a estrutura visual do código, dificultando a leitura. Os limites são definidos para evitar quebras de linha em editores com largura de janela configurada para 80 colunas, mesmo que a ferramenta coloque um marcador visual na última coluna ao quebrar a linha. Algumas ferramentas baseadas na *web* podem nem oferecer quebra dinâmica de linha.
+# 
+# Algumas equipes preferem um comprimento de linha maior. Para código mantido exclusivamente — ou principalmente — por uma equipe que entrou em acordo sobre isso, é aceitável aumentar o limite para até **99 caracteres**, desde que os comentários e *docstrings* ainda sejam limitados a **72 caracteres**.
+# 
+
+# #### 3.3.2 Como configurar o limite visual de caracteres no `VS Code`
+# 
+# 1. **Abra a Paleta de Comandos (`Ctrl+Shift+P`), digite **“Reload Window”** e pressione `Enter`**.
 # 
 # 2. Digite: `settings.json`
 # 
@@ -306,16 +321,18 @@
 #     ```json
 #     {
 #         // outras configurações...
-#         "editor.rulers": [100],
+#         "editor.rulers": [79],
 #         "editor.wordWrap": "on"  // opcional: quebra de linha automática
 #     }
 #     ```
 # 
-#     Se quiser usar `79` em vez de `100`, basta trocar `"editor.rulers": [100]` por `"editor.rulers":
-#      [79]`. Se quiser os dois, use:
+#     Se quiser usar `72` em vez de `79`, basta trocar `"editor.rulers": [79]` por `"editor.rulers":
+#      [72]`.
+#      
+#     Se quiser os dois, use:
 # 
 #     ```json
-#     "editor.rulers": [79, 100]
+#     "editor.rulers": [72, 79, 99]
 #     ```
 # 
 # O `VS Code` mostrará uma linha vertical cinza (ou da cor do seu tema) na coluna especificada. Isso 
@@ -408,7 +425,7 @@
 # 
 # Para desinstalar uma extensão no `VS Code`, siga os passos abaixo:
 # 
-# 1. **Abrir o VS Code**:
+# 1. **Abrir o `VS Code`**:
 # 
 #    1.1 Inicie o `VS Code` no seu computador.
 # 
@@ -516,7 +533,7 @@
 # | **Exibir Esquema do Arquivo** | Mostra todas funções/classe/variáveis dentro do arquivo atual             | `Ctrl+Shift+O`                                            |
 # | **Pesquisar na Árvore de Símbolos** | Pesquisa em todo o projeto                                          | `Ctrl+P`, depois digite `#nome`                           |
 # | **IntelliSense**              | Autocompleta e sugere funções, propriedades, métodos                      | `Ctrl+Espaço` (ou automático conforme digita)             |
-# | **Extensões específicas**     | Instalar extensões como *Python*, *Pylance*, *IntelliCode*, etc.          | Pela aba de extensões no `VS Code` (`Ctrl+Shift+X`)         |
+# | **Extensões específicas**     | Instalar extensões como *Python*, *Pylance*, *IntelliCode* etc.          | Pela aba de extensões no `VS Code` (`Ctrl+Shift+X`)         |
 # 
 
 # ## Referências
@@ -524,4 +541,6 @@
 # [1] OPENAI. ***Instalar arquivo .sh no ubuntu.*** Disponível em: <https://chat.openai.com/c/073320a8-7cc5-4590-9da0-d2bcc7093c88> (texto adaptado). Acessado em: 17/10/2023 16:05.
 # 
 # [2] OPENAI. ***VS code: editor popular.*** Disponível em: <https://chat.openai.com/c/b640a25d-f8e3-4922-8a3b-ed74a2657e42> (texto adaptado). Acessado em: 14/11/2023 09:33.
+# 
+# [3]
 # 
