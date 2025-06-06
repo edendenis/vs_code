@@ -295,7 +295,7 @@
 
 # ### 3.3 Comprimento Máximo da Linha
 # 
-# #### 3.3.1 Descrição
+# #### 3.3.1 Descrição [3]
 # 
 # Limite todas as linhas a no máximo **79 caracteres**.
 # 
@@ -542,5 +542,5 @@
 # 
 # [2] OPENAI. ***VS code: editor popular.*** Disponível em: <https://chat.openai.com/c/b640a25d-f8e3-4922-8a3b-ed74a2657e42> (texto adaptado). Acessado em: 14/11/2023 09:33.
 # 
-# [3]
+# [3] PYTHON TEAM. ***Pep 8 – style guide for python code***. Disponível em: <https://peps.python.org/pep-0008/> (texto adaptado). Acessado em: 06/06/2025 10:02.
 # 
